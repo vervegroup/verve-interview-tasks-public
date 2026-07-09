@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.VerveDemo" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/verve_primary</item>
+        <item name="colorPrimaryDark">@color/verve_primary_dark</item>
+        <item name="colorAccent">@color/verve_accent</item>
+    </style>
+</resources>
+

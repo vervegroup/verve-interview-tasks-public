@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Verve Demo</string>
+    <string name="hint_enter_creative">Paste HTML creative here...</string>
+    <string name="btn_load_ad">Load Ad</string>
+    <string name="btn_show_ad">Show Ad</string>
+    <string name="status_ready">Status: Ready</string>
+    <string name="sample_creative_label">Or use sample creative:</string>
+    <string name="btn_use_sample">Use Sample Creative</string>
+</resources>
+
