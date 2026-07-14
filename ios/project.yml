@@ -1,0 +1,53 @@
+name: AdBannerInterview
+options:
+  bundleIdPrefix: com.verve.interview
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: NO
+    CODE_SIGN_IDENTITY: ""
+
+targets:
+  # ─────────────────────────────────────────────────────────────
+  # The SDK the candidate implements. Mixed Objective-C + Swift,
+  # mirroring the production HyBid/Smaato framework: the public API
+  # is Objective-C, internals may be Swift.
+  # ─────────────────────────────────────────────────────────────
+  AdBannerKit:
+    type: framework
+    platform: iOS
+    sources:
+      - path: AdBannerKit/AdBannerKit.h
+        headerVisibility: public
+      - path: AdBannerKit/AdBannerView.h
+        headerVisibility: public
+      - path: AdBannerKit/AdBannerView.m
+      - path: AdBannerKit/Internal
+    settings:
+      base:
+        DEFINES_MODULE: YES
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.verve.interview.AdBannerKit
+        CLANG_ENABLE_MODULES: YES
+
+  # ─────────────────────────────────────────────────────────────
+  # A minimal "publisher" app that embeds the SDK, sets the delegate,
+  # and loads sample ad markup. This is the integration point.
+  # ─────────────────────────────────────────────────────────────
+  DemoHost:
+    type: application
+    platform: iOS
+    sources:
+      - path: DemoHost
+    dependencies:
+      - target: AdBannerKit
+    info:
+      path: DemoHost/Info.plist
+      properties:
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.verve.interview.DemoHost
