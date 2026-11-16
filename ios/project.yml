@@ -48,6 +48,14 @@ targets:
       path: DemoHost/Info.plist
       properties:
         UILaunchScreen: {}
+        # Required since the iOS 27 SDK: apps without the UIScene lifecycle
+        # crash at launch.
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.verve.interview.DemoHost
