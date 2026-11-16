@@ -12,6 +12,7 @@
 		1F3F222DB3416EFB334985E0 /* AdKitSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A325C1BB9155902D019B827 /* AdKitSupport.swift */; };
 		51F710BFC6F64A260CB068A7 /* AdBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 472059E51FD68BC0534D6EDE /* AdBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9313A56AB835A9AA9D60FE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBED53878B07D474F3FC08C5 /* AppDelegate.swift */; };
+		99FDE94CB2AE5A6D92244E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4B48D0B1D56BEE598CB62 /* SceneDelegate.swift */; };
 		9B723B343CF1A8C28050D5B6 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4096026CB65A154E7CA1393 /* AdViewController.swift */; };
 		E2B881E0600BE4863AA3D06E /* AdBannerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A374CBF751A4F0D35521AC73 /* AdBannerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED5B56F11C298BC9AB7827BA /* AdBannerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E907762B07869FEF5CFD3EA /* AdBannerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,6 +50,7 @@
 		7156CE2BDD3DA3071FC203B2 /* DemoHost.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DemoHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A374CBF751A4F0D35521AC73 /* AdBannerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdBannerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4096026CB65A154E7CA1393 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		AEE4B48D0B1D56BEE598CB62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C53E6D31B4EC98D4C8881ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DBED53878B07D474F3FC08C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				A4096026CB65A154E7CA1393 /* AdViewController.swift */,
 				DBED53878B07D474F3FC08C5 /* AppDelegate.swift */,
 				C53E6D31B4EC98D4C8881ADA /* Info.plist */,
+				AEE4B48D0B1D56BEE598CB62 /* SceneDelegate.swift */,
 			);
 			path = DemoHost;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				9B723B343CF1A8C28050D5B6 /* AdViewController.swift in Sources */,
 				9313A56AB835A9AA9D60FE20 /* AppDelegate.swift in Sources */,
+				99FDE94CB2AE5A6D92244E32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
